@@ -1,15 +1,15 @@
 # atcoder
 
-Atcoder の環境構築をしてくれるスクリプトです。
+Atcoder の環境構築をしてくれるスクリプトです。(自分用)
 
-# 使い方
+## 使い方
 
-## 1. リポジトリをクローンします。
+### 1. リポジトリをクローンします。
 ```shell
 $ git clone git@github.com:abe-tetsu/atcoder.git
 ```
 
-## 2. サンプルテストケースをダウンロードしてくれるライブラリをインストールします。
+### 2. サンプルテストケースをダウンロードしてくれるライブラリをインストールします。
 ```shell
 $ pip3 install online-judge-tools
 ```
@@ -17,13 +17,13 @@ $ pip3 install online-judge-tools
 ライブラリの詳細はこちらを参照してください。
 https://github.com/online-judge-tools/oj/blob/master/docs/getting-started.ja.md
 
-## 3. make init で始めることができます。
+### 3. make init で始めることができます。
 
 ```shell
 $ make init
 ```
 
-# make init の入力
+## make init について
 
 ```shell
  $ make init                                                                        [~/test/atcoder@main]
