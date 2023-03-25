@@ -30,6 +30,9 @@ if [ -n "$DIR_NAME" ]; then
     mkdir "$i"
   done
 
+  touch Makefile
+  cat ../util/makefile_template >> Makefile
+
   # ディレクトリを移動して、テストファイルをダウンロードする。とりえあず a~d まで
   for i in {A..D}; do
     cd "$i"
