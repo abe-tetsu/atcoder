@@ -89,3 +89,5 @@ test
         ├── sample-3.in
         └── sample-3.out
 ```
+
+### 生成される Go のファイルについて
