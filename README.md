@@ -35,6 +35,18 @@ URL: <URL を入力してください>
 ディレクトリ名: <ディレクトリ名を入力してください>
 ```
 
+### maek init の実行例
+
+```shell
+ $ make init                                                                        [~/test/atcoder@main]
+./scripts/init.sh
+================== init Start ==================
+解く問題のURLを入力してください。
+例: https://atcoder.jp/contests/abc289
+URL: https://atcoder.jp/contests/abc289
+ディレクトリ名: test
+```
+
 以上のコードを実行すると、入力したディレクトリに問題のテストケースと、Goのコードのテンプレートが作成されます。
 
 ```shell
