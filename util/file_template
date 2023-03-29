@@ -21,11 +21,13 @@ func readInt1() int {
 }
 
 func readInt2() (int, int) {
+	sc.Scan()
 	lines := strings.Split(sc.Text(), " ")
 	return s2i(lines[0]), s2i(lines[1])
 }
 
 func readInt3() (int, int, int) {
+	sc.Scan()
 	lines := strings.Split(sc.Text(), " ")
 	return s2i(lines[0]), s2i(lines[1]), s2i(lines[3])
 }
@@ -34,6 +36,11 @@ func readFloat64() float64 {
 	sc.Scan()
 	r, _ := strconv.ParseFloat(sc.Text(), 64)
 	return r
+}
+
+func readStringList() []string {
+	sc.Scan()
+	return strings.Split(sc.Text(), " ")
 }
 
 func readIntList() []int {
