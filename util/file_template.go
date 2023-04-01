@@ -53,6 +53,32 @@ func readIntList() []int {
 	return intList
 }
 
+func sliceStringUnique(target []string) (unique []string) {
+	m := map[string]bool{}
+
+	for _, v := range target {
+		if !m[v] {
+			m[v] = true
+			unique = append(unique, v)
+		}
+	}
+
+	return unique
+}
+
+func sliceIntUnique(target []int) (unique []int) {
+	m := map[int]bool{}
+
+	for _, v := range target {
+		if !m[v] {
+			m[v] = true
+			unique = append(unique, v)
+		}
+	}
+
+	return unique
+}
+
 // 昇順にソート
 func sortIntListAsc(intList []int) []int {
 	sort.Slice(intList, func(i, j int) bool {

@@ -37,7 +37,7 @@ if [ -n "$DIR_NAME" ]; then
   for i in {A..D}; do
     cd "$i"
     touch main.go
-    cat ../../util/file_template >> main.go
+    cat ../../util/file_template.go >> main.go
     # URL + /contests + _a, _b, _c, _d
     oj download "${URL}"/tasks/"${contest}"_"$i"
     cd ..
