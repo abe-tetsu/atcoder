@@ -8,6 +8,10 @@ import (
 	"strings"
 )
 
+func main() {
+
+}
+
 var sc = bufio.NewScanner(os.Stdin)
 
 func readString() string {
@@ -109,6 +113,9 @@ func i2s(i int) string {
 	return strconv.Itoa(i)
 }
 
-func main() {
-
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
 }
