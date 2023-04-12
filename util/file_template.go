@@ -33,7 +33,7 @@ func readInt2() (int, int) {
 func readInt3() (int, int, int) {
 	sc.Scan()
 	lines := strings.Split(sc.Text(), " ")
-	return s2i(lines[0]), s2i(lines[1]), s2i(lines[3])
+	return s2i(lines[0]), s2i(lines[1]), s2i(lines[2])
 }
 
 func readFloat64() float64 {

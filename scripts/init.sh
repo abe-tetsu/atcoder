@@ -25,6 +25,27 @@ if [ -n "$DIR_NAME" ]; then
     exit 1
   fi
 
+  # 環境変数ファイルを作成し、そこに問題のURLを記載
+  touch .env
+  echo "URL=$URL" >> .env
+
+  mkdir scripts
+  cd scripts
+  cat ../../util/script_template-a.sh >> script-a.sh
+  cat ../../util/script_template-b.sh >> script-b.sh
+  cat ../../util/script_template-c.sh >> script-c.sh
+  cat ../../util/script_template-d.sh >> script-d.sh
+
+  chmod +x script-a.sh
+  chmod +x script-b.sh
+  chmod +x script-c.sh
+  chmod +x script-d.sh
+  cd ..
+
+  # URLの末尾を取得し、環境変数ファイルに記載
+  contest=$(basename "${URL}")
+  echo "CONTEST=$contest" >> .env
+
   # A-D のディレクトリを作成
   for i in {A..D}; do
     mkdir "$i"

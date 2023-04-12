@@ -12,6 +12,7 @@ $ git clone git@github.com:abe-tetsu/atcoder.git
 ### 2. サンプルテストケースをダウンロードしてくれるライブラリをインストールします。
 ```shell
 $ pip3 install online-judge-tools
+$ pip3 install online-judge-template-generator
 ```
 
 ライブラリの詳細はこちらを参照してください。
@@ -103,6 +104,24 @@ $ make test-B  # Bのテストをします
 $ make test-C  # Cのテストをします
 $ make test-D  # Dのテストをします
 ```
+
+### ランダムテストの生成
+
+テストの走らせ方 と同様に、生成されたディレクトリ内にある Makefile から実行します。
+
+```shell
+$ cd test
+$ make random-A  # Aのランダムテストを生成します
+$ make random-B  # Bのランダムテストを生成します
+$ make random-C  # Cのランダムテストを生成します
+$ make random-D  # Dのランダムテストを生成します
+```
+
+make random-A を実行したら、A ディレクトリ配下にランダムテストが生成されます。
+生成された後に make test-A をするのがおすすめです。
+
+ランダムテストの生成は失敗する可能性があります。
+失敗したら、generate.py を編集して、よしなにしてください。
 
 ### 生成された Go のコードについて
 

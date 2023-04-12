@@ -10,3 +10,19 @@ test-C:
 
 test-D:
 	cd D && oj t -c "go run main.go"
+
+test-E:
+	cd E && oj t -c "go run main.go"
+
+random-A:
+	./scripts/script-a.sh
+
+random-B:
+	./scripts/script-b.sh
+
+random-C:
+	./scripts/script-c.sh
+
+random-D:
+	./scripts/script-d.sh
+
