@@ -52,7 +52,7 @@ if [ -n "$DIR_NAME" ]; then
   done
 
   touch Makefile
-  cat ../util/makefile_template >> Makefile
+  cat ../util/Makefile >> Makefile
 
   # ディレクトリを移動して、テストファイルをダウンロードする。とりえあず a~d まで
   for i in {A..D}; do
